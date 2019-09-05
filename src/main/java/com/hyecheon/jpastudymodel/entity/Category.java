@@ -1,5 +1,6 @@
 package com.hyecheon.jpastudymodel.entity;
 
+import com.hyecheon.jpastudymodel.entity.item.Item;
 import lombok.Data;
 
 import javax.persistence.*;

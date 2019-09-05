@@ -1,6 +1,8 @@
 package com.hyecheon.jpastudymodel.entity;
 
+import com.hyecheon.jpastudymodel.entity.item.Item;
 import lombok.Data;
+import org.hibernate.cache.spi.support.AbstractReadWriteAccess;
 
 import javax.persistence.*;
 

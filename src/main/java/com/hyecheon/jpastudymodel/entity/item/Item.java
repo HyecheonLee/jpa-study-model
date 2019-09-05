@@ -1,18 +1,22 @@
-package com.hyecheon.jpastudymodel.entity;
+package com.hyecheon.jpastudymodel.entity.item;
 
+import com.hyecheon.jpastudymodel.entity.Category;
 import lombok.Data;
 
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
-@Data
 @Entity
-public class Item {
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+@DiscriminatorColumn(name = "dtype")
+@Data
+public abstract class Item {
     @Id
     @GeneratedValue
     @Column(name = "item_id")
-    private Long id;
+    private String id;
+
     private String name;
     private int price;
     private int stockQuantity;
