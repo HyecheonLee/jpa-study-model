@@ -13,11 +13,11 @@ import java.util.Date;
 @Data
 public class BaseEntity {
     @Temporal(TemporalType.TIMESTAMP)
-    @DateTimeFormat(pattern = "yyyy-MM-dd hh:mm:ss")
+//    @DateTimeFormat(pattern = "yyyy-MM-dd hh:mm:ss")
     @Column(updatable = false)
     private Date createdDate;
 
     @Temporal(TemporalType.TIMESTAMP)
-    @DateTimeFormat(pattern = "yyyy-MM-dd hh:mm:ss")
+//    @DateTimeFormat(pattern = "yyyy-MM-dd hh:mm:ss")
     private Date lastModifiedDate;
 }
